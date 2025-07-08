@@ -1,0 +1,23 @@
+.trail-dot {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #12b2de;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  animation: fadeOutDot 0.8s ease-out forwards;
+  box-shadow: 0 0 8px rgb(0, 235, 248);
+}
+
+@keyframes fadeOutDot {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}

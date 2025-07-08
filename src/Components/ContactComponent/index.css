@@ -1,0 +1,137 @@
+.contact-section {
+    display: flex;
+    flex-direction: row;
+width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 6%;
+
+    color: #e0f0ff;
+    font-family: "Segoe UI", sans-serif;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info {
+    flex: 1;
+  max-width: 600px;
+    padding-right: 2rem;
+  }
+  
+  .contact-info h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    color: #b8c0d0;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-details h3 {
+    color: #38bdf8;
+    margin-bottom: 0.3rem;
+  }
+  
+  .contact-details p {
+    margin-bottom: 1rem;
+    color: #c0ccde;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #38bdf8;
+  }
+  
+  .contact-form {
+    background: #161625;
+    box-shadow: 0 0 20px #00f0ff33;
+    padding: 2rem;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+  }
+  
+  .contact-form h2 {
+    font-size: 1.8rem;
+    color: #38bdf8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    background: #0f0f1a;
+    border: 1px solid #00f0ff33;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #38bdf8;
+    outline: none;
+    box-shadow: 0 0 8px #00f0ff66;
+  }
+  
+  .contact-form button {
+    background-color: #38bdf8;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 14px #00f0ff55;
+  }
+  
+  .contact-form button:hover {
+    background-color: #2d7fa2;
+    box-shadow: 0 0px 16px #0399a377;
+  }
+  @media screen and (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 4%;
+    }
+    
+    .contact-info, .contact-form {
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+    
+    .contact-info h1 {
+      font-size: 2.5rem;
+    }
+    
+    .contact-form h2 {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width:425px){
+    .contact-section{
+      flex-direction: column;
+      align-items: center;
+      max-width: 350px;
+    }
+    
+  }

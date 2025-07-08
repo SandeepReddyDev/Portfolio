@@ -1,0 +1,126 @@
+.experience-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    color: #d1faff;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .timeline-card {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .timeline-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  }
+  
+  .timeline-card h3 {
+    margin: 0 0 0.5rem;
+    color: #38bdf8;
+    font-size: 1.2rem;
+  }
+  
+  .timeline-role {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #aefeff;
+  }
+  
+  .duration {
+    font-size: 0.9rem;
+    color: rgb(150, 232, 247);
+    font-weight: bold;
+  }
+  
+@media screen and (max-width: 768px) {
+    .experience-wrapper {
+      padding: 1rem;
+    }
+  
+    .timeline-card {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+  
+    .timeline-card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .timeline-role {
+      font-size: 0.9rem;
+    }
+  
+    .duration {
+      font-size: 0.8rem;
+    }
+  
+    /* Optional: Stack tabs vertically or reduce font */
+    .MuiTab-root {
+      font-size: 1rem !important;
+      min-width: auto !important;
+      padding: 0.5rem !important;
+    }
+  
+    /* Optional: Timeline spacing fix */
+    .MuiTimelineContent-root {
+      margin-top: 0.5rem;
+    }
+  
+    .MuiTimelineOppositeContent-root {
+      display: none; /* hides the left-side timestamp for better spacing */
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .experience-wrapper {
+      padding: 1rem;
+    }
+  
+    .timeline-card {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+  
+    .timeline-card h3 {
+      font-size: 1rem;
+    }
+  
+    .timeline-role {
+      font-size: 0.9rem;
+    }
+  
+    .duration {
+      font-size: 0.8rem;
+    }
+  
+    /* Optional: Stack tabs vertically or reduce font */
+    .MuiTab-root {
+      font-size: 1rem !important;
+      min-width: auto !important;
+      padding: 0.5rem !important;
+    }
+  
+    /* Optional: Timeline spacing fix */
+    .MuiTimelineContent-root {
+      margin-top: 0.5rem;
+    }
+  
+    .MuiTimelineOppositeContent-root {
+      display: none; /* hides the left-side timestamp for better mobile spacing */
+    }
+    .timeline-content{
+      max-width: 250px !important;
+ 
+    }
+  }
+  
