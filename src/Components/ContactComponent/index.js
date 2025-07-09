@@ -1,7 +1,7 @@
 // ContactSection.jsx
 import React, { useRef } from "react";
 import "./index.css";
-import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithubSquare } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
@@ -57,13 +57,15 @@ const ContactSection = () => {
         </div>
 
         <div className="social-icons">
-          <FaLinkedin />
-          <FaInstagram />
+         <FaInstagram/>
+         <FaGithubSquare/>
+         <FaLinkedin/>               
+          
         </div>
       </div>
 
       <div className="contact-form">
-        <h2>GET IN TOUCH</h2>
+        <h2 className="headings">GET IN TOUCH</h2>
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="user_name" placeholder="Name" required />
           <input type="email" name="user_email" placeholder="Email" required />

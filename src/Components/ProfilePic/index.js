@@ -25,7 +25,7 @@ const ProfilePic = ({scrollToTab}) => {
                      <button className="id-icons" onClick={() => scrollToTab("Skills")} ><SiHyperskill /> </button>
                     <button className="id-icons" onClick={()=>scrollToTab("Experience")}><FaGraduationCap /></button>
                     <button className="id-icons" onClick={() => scrollToTab("Projects")}><GrProjects /></button>
-                    <button className="id-icons" onClick={() => scrollToTab("Contact")}><IoMdInformationCircleOutline /> </button>
+                    <button className="id-icons" onClick={() => scrollToTab("About Me")}><IoMdInformationCircleOutline /> </button>
                 </div>
             </div>
         </div>

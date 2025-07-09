@@ -15,7 +15,7 @@ import { GrProjects } from "react-icons/gr";
 import { SiHyperskill } from "react-icons/si";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
-import { FaGraduationCap, FaDownload } from "react-icons/fa6";
+import { FaGraduationCap, FaDownload , FaArrowUp, FaA} from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
 
 
@@ -96,7 +96,10 @@ const Home = () => {
         Projects: useRef(null),
         Contact: useRef(null)
     };
-
+    const onClickUpArrow=()=>{
+        setActiveTab('Profile');
+        sectionRefs.Profile.current.scrollIntoView({ behavior: 'smooth' });
+    }
     useEffect(() => {
         AOS.init({ duration: 800 });
 
@@ -206,6 +209,9 @@ I enjoy watching Marvel movies and staying updated with the latest trends in web
             <div id="Contact" ref={sectionRefs.Contact} className="contact-c" data-aos="fade-up">
 
                 <ContactSection />
+            </div>
+            <div>
+                <button onClick={onClickUpArrow} className={activeTab==='Profile'?'profile-up':'up-arrow'}><FaArrowUp/></button>
             </div>
         </div>
     );

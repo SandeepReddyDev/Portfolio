@@ -11,7 +11,7 @@
   
   .skill-box {
     background-color: transparent; /* transparent dark background */
-    border: 1px solid rgba(0, 255, 255, 0.5);
+    border: 1px solid #034b6a;
     border-radius: 12px;
     min-width: 100px;
     height: 40px;
@@ -43,7 +43,7 @@
   }
   
   .skill-title {
-    color: #00ffff;
+    color: #38bdf8;
     font-size: 16px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -1,21 +1,20 @@
 .contact-section {
     display: flex;
     flex-direction: row;
-width: 80%;
+    width: 80%;
     justify-content: center;
-    align-items: center;
-    padding: 4rem 6%;
-
+    align-content: center;   
     color: #e0f0ff;
     font-family: "Segoe UI", sans-serif;
     flex-wrap: wrap;
+    padding: auto;
+    box-sizing: border-box;
+    overflow: hidden;
   }
-  
-  .contact-info {
-    flex: 1;
-  max-width: 600px;
-    padding-right: 2rem;
-  }
+   .contact-info{
+    max-width:500px;
+   }
+ 
   
   .contact-info h1 {
     font-size: 3rem;
@@ -130,8 +129,9 @@ width: 80%;
   @media screen and (max-width:425px){
     .contact-section{
       flex-direction: column;
-      align-items: center;
-      max-width: 350px;
+      justify-content: center;
+      align-items: center; 
+      width: 100%;     
     }
     
   }
