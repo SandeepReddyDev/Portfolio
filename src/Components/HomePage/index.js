@@ -15,7 +15,7 @@ import { GrProjects } from "react-icons/gr";
 import { SiHyperskill } from "react-icons/si";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
-import { FaGraduationCap, FaDownload , FaArrowUp, FaA} from "react-icons/fa6";
+import { FaGraduationCap, FaDownload, FaArrowUp, FaA } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
 
 
@@ -96,7 +96,15 @@ const Home = () => {
         Projects: useRef(null),
         Contact: useRef(null)
     };
-    const onClickUpArrow=()=>{
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/resume.pdf';
+        link.download = 'resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+    const onClickUpArrow = () => {
         setActiveTab('Profile');
         sectionRefs.Profile.current.scrollIntoView({ behavior: 'smooth' });
     }
@@ -154,12 +162,10 @@ I enjoy watching Marvel movies and staying updated with the latest trends in web
                             I specialize in crafting clean designs, intuitive user flows, and responsive, high-performance websites using modern web technologies.</p>
                     </div>
                     <div className='profile-buttons'>
-                        <a href="/resume.pdf" download>
-                            <button className='profile-btn resume-btn'>
-                                <span className='resume-text'>Resume</span>
-                                <span className='download-text'>Download <FaDownload /></span>
-                            </button>
-                        </a>
+                        <button onClick={handleDownload} className='profile-btn resume-btn'>
+                            <span className='resume-text'>Resume</span>
+                            <span className='download-text'>Download <FaDownload /></span>
+                        </button>
                         <button onClick={() => scrollToTab("Contact")} className='profile-btn contact-btn'>
                             <span className='contact-text'>Contact Me</span>
                             <span className='connect-text'>Let's Connect<BiLogoTelegram /></span>
@@ -178,16 +184,16 @@ I enjoy watching Marvel movies and staying updated with the latest trends in web
                     </div>
                     <p className='about-text'>
                         {isMobile && !showFullText ? shortText + '...' : fullText}
-                         {shouldShowButton && (
-                        <button
-                            className='read-more-btn'
-                            onClick={() => setShowFullText(!showFullText)}
-                        >
-                            {showFullText ? 'Read Less...' : 'Read More...'}
-                        </button>
-                    )}
+                        {shouldShowButton && (
+                            <button
+                                className='read-more-btn'
+                                onClick={() => setShowFullText(!showFullText)}
+                            >
+                                {showFullText ? 'Read Less...' : 'Read More...'}
+                            </button>
+                        )}
                     </p>
-                   
+
                 </div>
 
             </div>
@@ -211,7 +217,7 @@ I enjoy watching Marvel movies and staying updated with the latest trends in web
                 <ContactSection />
             </div>
             <div>
-                <button onClick={onClickUpArrow} className={activeTab==='Profile'?'profile-up':'up-arrow'}><FaArrowUp/></button>
+                <button onClick={onClickUpArrow} className={activeTab === 'Profile' ? 'profile-up' : 'up-arrow'}><FaArrowUp /></button>
             </div>
         </div>
     );

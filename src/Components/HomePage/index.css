@@ -255,14 +255,13 @@ body {
 }
 .about-text {
   width: 50%;
-  font-size: 16px;
+  font-size: 16px ;
   overflow: auto;
-
   /* Optional styling for text area */
   background-color: transparent;
   backdrop-filter: blur(10px);
   color: #ffffff;
-  padding: 1rem;
+  padding: 2rem !important;
   border-radius: 8px;
 }
 
@@ -378,7 +377,8 @@ align-items: center;
   padding: 4px 8px;
 }
 .up-arrow{
-  display: none ;
+  display: flex ;
+  z-index: 5; 
   position: fixed;
   bottom: 20px;
   right: 10px;
