@@ -96,14 +96,7 @@ const Home = () => {
         Projects: useRef(null),
         Contact: useRef(null)
     };
-    const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = '/resume.pdf';
-        link.download = 'resume.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+
     const onClickUpArrow = () => {
         setActiveTab('Profile');
         sectionRefs.Profile.current.scrollIntoView({ behavior: 'smooth' });
@@ -162,10 +155,12 @@ I enjoy watching Marvel movies and staying updated with the latest trends in web
                             I specialize in crafting clean designs, intuitive user flows, and responsive, high-performance websites using modern web technologies.</p>
                     </div>
                     <div className='profile-buttons'>
-                        <button onClick={handleDownload} className='profile-btn resume-btn'>
-                            <span className='resume-text'>Resume</span>
-                            <span className='download-text'>Download <FaDownload /></span>
-                        </button>
+                        <a href={process.env.PUBLIC_URL + "/resume.pdf"} download>
+                            <button className='profile-btn resume-btn'>
+                                <span className='resume-text'>Resume</span>
+                                <span className='download-text'>Download <FaDownload /></span>
+                            </button>
+                        </a>
                         <button onClick={() => scrollToTab("Contact")} className='profile-btn contact-btn'>
                             <span className='contact-text'>Contact Me</span>
                             <span className='connect-text'>Let's Connect<BiLogoTelegram /></span>
