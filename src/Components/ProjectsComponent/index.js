@@ -57,10 +57,10 @@ const ProjectsComponent = () => {
             <p className="tech-used"><strong>Tech:</strong> {project.technologies}</p>
 
             <div className="project-buttons">
-              <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
+              <a href={project.repoLink} target="_blank" rel="noopener noreferrer" className='links'>
                 <button className="glow-button"><FaGithub/> Repo</button>
               </a>
-              <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className='text-decoration'>
+              <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className='links'>
                 <button className="glow-button">Live <IoLink/> </button>
               </a>
             </div>

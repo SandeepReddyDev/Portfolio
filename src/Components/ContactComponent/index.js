@@ -1,7 +1,7 @@
 // ContactSection.jsx
 import React, { useRef } from "react";
 import "./index.css";
-import { FaLinkedin, FaInstagram, FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithubSquare , FaWhatsappSquare } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
@@ -57,10 +57,9 @@ const ContactSection = () => {
         </div>
 
         <div className="social-icons">
-         <FaInstagram/>
-         <FaGithubSquare/>
-         <FaLinkedin/>               
-          
+          <a href="https://web.whatsapp.com/" className="icons"><FaWhatsappSquare  /></a>
+          <a href="https://github.com/SandeepReddyDev" className="icons"><FaGithubSquare /></a>
+          <a href="https://www.linkedin.com/in/sandeep-reddy-daram-930458241/" className="icons"><FaLinkedin /> </a>
         </div>
       </div>
 

@@ -101,11 +101,13 @@
     transition: all 0.3s ease;
     text-decoration: none !important;
   }
-  
+  .links{
+    text-decoration: none !important;
+  }
   .glow-button:hover {
     background-color: #38bdf8;
     color: #0f0f1b;
-    border: 2px solid #0f0f1b;
+    
     box-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8;
   }
   @media screen and (max-width: 768px) {

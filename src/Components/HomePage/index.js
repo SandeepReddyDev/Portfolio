@@ -155,15 +155,39 @@ I enjoy watching Marvel movies and staying updated with the latest trends in web
                             I specialize in crafting clean designs, intuitive user flows, and responsive, high-performance websites using modern web technologies.</p>
                     </div>
                     <div className='profile-buttons'>
-                        <a href={process.env.PUBLIC_URL + "/resume.pdf"} download>
+                        <a href={process.env.PUBLIC_URL + "/SandeepResume.pdf"} download>
                             <button className='profile-btn resume-btn'>
                                 <span className='resume-text'>Resume</span>
                                 <span className='download-text'>Download <FaDownload /></span>
+
+                                {/* 🔥 10 sparks */}
+                                <span className="spark"></span>
+                                <span className="spark"></span>
+                                <span className="spark"></span>
+                                <span className="spark"></span>
+                                <span className="spark"></span>
+                                <span className="spark"></span>
+                                <span className="spark"></span>
+                                <span className="spark"></span>
+                                <span className="spark"></span>
+                                <span className="spark"></span>
                             </button>
                         </a>
                         <button onClick={() => scrollToTab("Contact")} className='profile-btn contact-btn'>
                             <span className='contact-text'>Contact Me</span>
                             <span className='connect-text'>Let's Connect<BiLogoTelegram /></span>
+
+                            {/* 🔥 10 sparks */}
+                            <span className="spark"></span>
+                            <span className="spark"></span>
+                            <span className="spark"></span>
+                            <span className="spark"></span>
+                            <span className="spark"></span>
+                            <span className="spark"></span>
+                            <span className="spark"></span>
+                            <span className="spark"></span>
+                            <span className="spark"></span>
+                            <span className="spark"></span>
                         </button>
                     </div>
 
@@ -212,8 +236,22 @@ I enjoy watching Marvel movies and staying updated with the latest trends in web
                 <ContactSection />
             </div>
             <div>
-                <button onClick={onClickUpArrow} className={activeTab === 'Profile' ? 'profile-up' : 'up-arrow'}><FaArrowUp /></button>
+                <button onClick={onClickUpArrow} className={activeTab === 'Profile' ? 'profile-up' : 'up-arrow'}>
+                    <FaArrowUp />
+                    {/* 🔥 Always-active sparks */}
+                    <span className="spark"></span>
+                    <span className="spark"></span>
+                    <span className="spark"></span>
+                    <span className="spark"></span>
+                    <span className="spark"></span>
+                    <span className="spark"></span>
+                    <span className="spark"></span>
+                    <span className="spark"></span>
+                    <span className="spark"></span>
+                    <span className="spark"></span>
+                </button>
             </div>
+
         </div>
     );
 };

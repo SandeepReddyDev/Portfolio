@@ -24,64 +24,13 @@
   text-align: center;
   position: relative;
   color: #fff;
-  overflow: hidden;
+  overflow: hidden !important;
   animation: openup 0.8s ease-out forwards;
     animation-delay: 0s, 5s;
   transform-origin:middle;
   overflow: hidden;
 }
-@keyframes screenFlicker {
-  0% {
-    opacity: 1;
-    transform: none;
-    filter: none;
-  }
-  3% {
-  
-    transform: translate(1px, -1px) ;
-    filter: brightness(1.2);
-  }
-  5% {
-   
-    transform: translate(-2px, 1px) ;
-    filter: contrast(1.4);
-  }
-  8% {
-    
-    transform: none;
-    filter: none;
-  }
-  13% {
-     box-shadow: #0ea5e9 0px 0px 10px;
-    transform: translate(3px, -3px);
-    filter: brightness(0.6) contrast(1.8);
-  }
-  18% {
-    opacity: 1;
-    transform: none;
-    filter: none;
-  }
-  22% {
-    opacity: 1;
-    transform: translate(-1px, 2px);
-    filter: hue-rotate(20deg);
-  }
-  25% {
-    transform: translate(0px, -1px) ;
-    filter: none;
-    box-shadow: #0ea5e9 0px 0px 20px;
-  }
-  28% {
-   
-    transform: none;
-    filter: none;
-  }
-  100% {
-   
-    transform: none;
-    filter: none;
-  }
-}
+
 @keyframes openup {
   0% {
     transform: scaleY(0.01);
@@ -97,6 +46,8 @@
 
   }
 }
+
+
 
 .id-avatar {
   width: 100%;

@@ -48,10 +48,17 @@
     font-size: 1.5rem;
     color: #38bdf8;
   }
-  
+  .icons{
+    color: #38bdf8 !important;
+    transition: all 0.3s ease-in-out;
+  }
+  .icons:hover{
+    transform: scale(1.1);
+  }
   .contact-form {
-    background: #161625;
-    box-shadow: 0 0 20px #00f0ff33;
+    background: transparent;
+    
+    backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 10px;
     flex: 1;
@@ -73,7 +80,7 @@
   .contact-form input,
   .contact-form textarea {
     background: #0f0f1a;
-    border: 1px solid #00f0ff33;
+    border: 1px solid #38bdf8;
     color: #fff;
     padding: 0.75rem 1rem;
     margin-bottom: 1rem;
